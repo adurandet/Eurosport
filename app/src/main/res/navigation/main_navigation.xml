@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@+id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.omnilog.eurosport.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_home_to_story"
+            app:destination="@id/story_detail"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/story_detail"
+        android:name="com.omnilog.eurosport.story.StoryDetailFragment"
+        tools:layout="@layout/story_detail_fragment">
+        <argument
+            android:name="story"
+            app:argType="com.omnilog.eurosport.home.model.Story" />
+    </fragment>
+
+</navigation>

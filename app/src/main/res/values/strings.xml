@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Eurosport</string>
+    <string name="authorAndTime">By %1$s - %2$s</string>
+    <string name="views">Views %1$d</string>
+    <string name="hago">%1$d h ago</string>
+    <string name="mago">%1$d min ago</string>
+    <string name="byAuthor">By %1$s</string>
+    <string name="share">Share</string>
+    <string name="share_id">Share %1$d</string>
+</resources>
