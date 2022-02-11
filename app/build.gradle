@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.omnilog.eurosport"
+        applicationId "com.eurosport"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1

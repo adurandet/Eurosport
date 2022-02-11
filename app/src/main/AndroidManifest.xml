@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.omnilog.eurosport">
+    package="com.eurosport">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -19,6 +19,35 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter android:priority="100">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+
+                <data android:host="www.eurosport.com" />
+                <data android:host="www.eurosport.de" />
+                <data android:host="eurosport.qq.com" />
+                <data android:host="tr.eurosport.com" />
+                <data android:host="it.eurosport.com" />
+                <data android:host="www.eurosport.pl" />
+                <data android:host="www.eurosport.es" />
+                <data android:host="www.eurosport.fr" />
+                <data android:host="www.rugbyrama.fr" />
+                <data android:host="www.eurosport.ru" />
+                <data android:host="www.eurosport.co.uk" />
+
+                <data android:pathPattern="/.*/.*/.*/.*/story\\.shtml" />
+                <data android:pathPattern="/.*/.*/.*/story\\.shtml" />
+                <data android:pathPattern="/.*/.*/story\\.shtml" />
+                <data android:pathPattern="/.*/story\\.shtml" />
+
+            </intent-filter>
+
         </activity>
         <activity android:name=".player.PlayerActivity"
             android:theme="@style/Theme.Eurosport.FullScreen"

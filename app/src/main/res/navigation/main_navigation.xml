@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/home"
-        android:name="com.omnilog.eurosport.home.HomeFragment"
+        android:name="com.eurosport.home.HomeFragment"
         android:label="@string/app_name"
         tools:layout="@layout/home_fragment">
         <action
@@ -20,11 +20,11 @@
 
     <fragment
         android:id="@+id/story_detail"
-        android:name="com.omnilog.eurosport.story.StoryDetailFragment"
+        android:name="com.eurosport.story.StoryDetailFragment"
         tools:layout="@layout/story_detail_fragment">
         <argument
             android:name="story"
-            app:argType="com.omnilog.eurosport.home.model.Story" />
+            app:argType="com.eurosport.home.model.Story" />
     </fragment>
 
 </navigation>
